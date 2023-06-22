@@ -7,7 +7,6 @@ function Login() {
 
   const [userName, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [isLogIn, setIsLogIn] = useState(true);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,21 +28,6 @@ function Login() {
       console.log(err);
     }
   };
-
-
-
-//   fetch('https://dummyjson.com/auth/login', {
-//   method: 'POST',
-//   headers: { 'Content-Type': 'application/json' },
-//   body: JSON.stringify({
-    
-//     username: 'kminchelle',
-//     password: '0lelplR',
-//     // expiresInMins: 60, // optional
-//   })
-// })
-// .then(res => res.json())
-// .then(console.log);
 
   return (
     <div className="account-pages">
@@ -109,14 +93,6 @@ function Login() {
             </div>
           </div>
 
-          <div className="mt-5 text-center">
-            <p>
-              Don't have an account?{' '}
-              <a href="/" className="">
-                Sign up
-              </a>
-            </p>
-          </div>
         </div>
       </div>
     </div>

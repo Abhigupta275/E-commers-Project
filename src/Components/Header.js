@@ -4,10 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 const Header = ({ cartCount,cartItems, favoritesCount, onCartClick,onFavClick, isLogIn }) => {
     const navigate = useNavigate()
-
- 
- 
-
   return (
     <header className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/">

@@ -4,7 +4,7 @@ import "./App.css";
 import Hero from './Components/Hero';
 import ProductList from './Components/ProductList';
 import ProductDetail from './Components/ProductDetail';
-import LogIn from './LogIn';
+import Login from './Components/LogIn';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Cart from './Components/Cart';
 import Favorites from './Components/Favoriates';
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Hero />} />
         <Route path='/cart' element={<Cart />}/>
         <Route path='/favorites' element={<Favorites />}/>
-        <Route path='/login' element={<LogIn />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/footer' element={<Footer />} />
         
       </Routes>
